@@ -1,3 +1,36 @@
 .App {
   text-align: center;
+  background-color: rgb(234, 234, 234);
+}
+.main {
+  background-color: rgb(234, 234, 234);
+}
+.header {
+  /* background-color: aqua; */
+  /* background-image: linear-gradient(135deg rgb(24 42 115) 0% rgb(33 138 174) 69% rgb(32 167 174)89%); */
+}
+.user-img {
+  height: 7vh !important;
+  border-radius: 50%;
+}
+.attendee {
+  display: inline-block;
+  margin: 2px;
+}
+.attendee-img {
+  height: 4vh !important;
+  border-radius: 50%;
+}
+
+.parent-div {
+  display: flex;
+  flex-wrap: wrap;
+  /* for vertical aligning */
+  align-items: center;
+}
+.event-form {
+  background-color: #fff;
+  border: 1px solid rgb(220, 218, 218);
+  border-radius: 5px;
+  padding: 5%;
 }
