@@ -3,14 +3,14 @@ import { Container, Row, Col, Button, Nav, Navbar } from "react-bootstrap";
 function Header({ setFormOpen }) {
   return (
     <>
-      <Navbar className="header" bg="dark" variant="dark">
+      <Navbar className="header" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <Row>
               <Col>
                 <img
                   className="img-fluid"
-                  src="./assets/logo.png"
+                  src="/assets/logo.png"
                   alt="Logo"
                   style={{ height: "6vh" }}
                 />
@@ -20,10 +20,13 @@ function Header({ setFormOpen }) {
               </Col>
             </Row>
           </Navbar.Brand>
+          {/* <Nav.Link href="/events">
+            <div className="white mx-3">Event</div>
+          </Nav.Link> */}
           <Nav className="me-auto">
-            <Nav.Link href="#home">
+            <Nav.Link href="/create-event">
               <Button
-                variant="success"
+                variant="light"
                 onClick={() => {
                   setFormOpen(true);
                 }}
